@@ -1,0 +1,60 @@
+/* ── Contact ── */
+.contact-hero {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 48px;
+}
+.contact-hero h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.contact-hero p {
+  color: var(--ink-soft);
+  margin-top: 16px;
+  font-size: 1.05rem;
+}
+.contact-cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+@media (max-width: 880px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.contact-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 14px;
+  text-align: center;
+  background: var(--card);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+.contact-card .ico {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 12px;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-card .k {
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  margin-bottom: 3px;
+}
+.contact-card .v {
+  font-size: 0.85rem;
+  font-weight: 600;
+  word-break: break-word;
+}

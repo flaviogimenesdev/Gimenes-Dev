@@ -1,0 +1,50 @@
+/* ── Testimonials ── */
+.testi-card {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  background: var(--card);
+  position: relative;
+}
+.testi-flag {
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.64rem;
+  background: var(--ink);
+  color: #fff;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.testi-quote {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.testi-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testi-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--paper-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+.testi-person .name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.testi-person .role {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}

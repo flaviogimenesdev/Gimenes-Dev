@@ -1,0 +1,30 @@
+/* ── Footer ── */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 36px 0;
+}
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-row .brand {
+  font-size: 1rem;
+}
+.footer-copy {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+.footer-social a {
+  color: var(--ink-faint);
+  transition: color 0.2s ease;
+}
+.footer-social a:hover {
+  color: var(--accent);
+}

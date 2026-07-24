@@ -1,0 +1,124 @@
+/* ── Navbar ── */
+header#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(247, 247, 245, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+header#nav.scrolled {
+  border-bottom-color: var(--line);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.brand .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-links a {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: var(--ink);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-switch {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px;
+  font-family: var(--font-mono), monospace;
+  font-size: 1rem;
+}
+.lang-switch button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px 11px;
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: inherit;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.lang-switch button.active {
+  background: var(--ink);
+  color: #fff;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--ink);
+}
+
+#mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 72px 0 0 0;
+  z-index: 90;
+  background: var(--paper);
+  overflow-y: auto;
+}
+#mobile-menu.open {
+  display: block;
+}
+#mobile-menu ul {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#mobile-menu a {
+  display: block;
+  padding: 14px 4px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 880px) {
+  .nav-links {
+    display: none;
+  }
+  #menu-toggle {
+    display: block;
+  }
+}

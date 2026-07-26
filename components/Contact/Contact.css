@@ -12,11 +12,39 @@
   margin-top: 16px;
   font-size: 1.05rem;
 }
-.contact-cta {
+.contact-cta-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
   margin-bottom: 56px;
 }
+
+.contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-separator {
+  font-size: 1.4rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.contact-or {
+  color: var(--ink-faint);
+  font-size: 0.95rem;
+  text-transform: lowercase;
+}
+
+.btn-contato {
+  width: 165px;
+  justify-content: center;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -57,4 +85,7 @@
   font-size: 0.85rem;
   font-weight: 600;
   word-break: break-word;
+  width: 140px;
+  margin: auto;
+  padding-top: 5px;
 }

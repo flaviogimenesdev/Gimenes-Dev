@@ -21,11 +21,8 @@ export default function Hero() {
           <p className="hero-sub">{t("hero.sub")}</p>
 
           <div className="hero-cta">
-            <a href="#contato" className="btn btn-primary">
+            <a href="#contato" className="btn btn-primary botao-inicial">
               {t("hero.ctaPrimary")}
-            </a>
-            <a href="#projetos" className="btn btn-outline">
-              {t("hero.ctaSecondary")}
             </a>
           </div>
 

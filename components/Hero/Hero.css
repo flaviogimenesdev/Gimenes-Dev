@@ -52,6 +52,11 @@
   margin-top: 32px;
 }
 
+.botao-inicial {
+    width: 230px;
+    justify-content: center;
+}
+
 .trust-line {
   margin-top: 28px;
   display: flex;

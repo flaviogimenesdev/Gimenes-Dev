@@ -10,13 +10,14 @@ const FAQ_ITEMS = [
   { qKey: "faq.q3", aKey: "faq.a3" },
   { qKey: "faq.q4", aKey: "faq.a4" },
   { qKey: "faq.q5", aKey: "faq.a5" },
+  { qKey: "faq.q6", aKey: "faq.a6" },
 ];
 
 export default function Faq() {
   const { t } = useLanguage();
 
   return (
-    <section id="faq" className="section section-alt">
+    <section id="faq" className="section">
       <div className="wrap">
         <Reveal className="section-head">
           <p className="eyebrow mono">{t("faq.eyebrow")}</p>

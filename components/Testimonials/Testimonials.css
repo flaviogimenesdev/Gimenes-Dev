@@ -40,6 +40,10 @@
   font-size: 0.72rem;
   color: var(--ink-faint);
 }
+
+.img-border {
+  border-radius: 50%;
+}
 .testi-person .name {
   font-weight: 600;
   font-size: 0.9rem;

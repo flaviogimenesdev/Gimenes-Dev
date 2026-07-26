@@ -2,12 +2,30 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import Reveal from "../Reveal/Reveal";
-import "./Testimonials.css"
+import "./Testimonials.css";
 
 const TESTIMONIALS = [
-  { id: "t1", avatar: "C1", quoteKey: "testi.q1", nameKey: "testi.n1", roleKey: "testi.r1" },
-  { id: "t2", avatar: "C2", quoteKey: "testi.q2", nameKey: "testi.n2", roleKey: "testi.r2" },
-  { id: "t3", avatar: "C3", quoteKey: "testi.q3", nameKey: "testi.n3", roleKey: "testi.r3" },
+  {
+    id: "t1",
+    avatar: "/imgs/Prints/letterR.jpeg",
+    quoteKey: "testi.q1",
+    nameKey: "testi.n1",
+    roleKey: "testi.r1",
+  },
+  {
+    id: "t2",
+    avatar: "/imgs/Prints/NexusLogo.png",
+    quoteKey: "testi.q2",
+    nameKey: "testi.n2",
+    roleKey: "testi.r2",
+  },
+  {
+    id: "t3",
+    avatar: "/imgs/Prints/iconS.png",
+    quoteKey: "testi.q3",
+    nameKey: "testi.n3",
+    roleKey: "testi.r3",
+  },
 ];
 
 // Substitua o conteúdo do array TESTIMONIALS acima e as chaves testi.q/n/r
@@ -16,7 +34,7 @@ export default function Testimonials() {
   const { t } = useLanguage();
 
   return (
-    <section id="depoimentos" className="section">
+    <section id="depoimentos" className="section section-alt">
       <div className="wrap">
         <Reveal className="section-head">
           <p className="eyebrow mono">{t("testi.eyebrow")}</p>
@@ -30,7 +48,9 @@ export default function Testimonials() {
               <span className="testi-flag mono">{t("testi.flag")}</span>
               <p className="testi-quote">{t(item.quoteKey)}</p>
               <div className="testi-person">
-                <div className="testi-avatar">{item.avatar}</div>
+                <div className="testi-avatar">
+                  <img src={item.avatar} alt="" className="img-border"></img>
+                </div>
                 <div>
                   <p className="name">{t(item.nameKey)}</p>
                   <p className="role">{t(item.roleKey)}</p>

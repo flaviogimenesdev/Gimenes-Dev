@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import Reveal from "../Reveal/Reveal";
+
 import { MessageCircle } from "lucide-react";
 import {
   IconMail,
